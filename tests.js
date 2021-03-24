@@ -51,5 +51,27 @@ describe("addOne", function() {
 
 describe('sayHello', function() {
     it('should be a defined function', function() {
-        expect(typeof sayHello).toBe('function')});
+        expect(typeof sayHello).toBe('function');
     });
+    it('should return a string when called', function() {
+        expect(typeof sayHello()).toBe("string");
+    });
+    it("should never return 'undefined' when called", function() {
+        expect(sayHello()).not.toBe(undefined);
+    });
+});
+
+
+
+
+
+
+// Exercise #2 Ensure our function returns the right data type.
+//     New tests will each have their own expect, it, the describe
+// Step 1: The smallest possible test, now that the function exists, is to ensure that calling the function gives us a string. Inside of tests.js, add an assertion to sayHello that it "should return a string when called.". The test should look similar to expect(typeof sayHello()).toBe("string")
+// Step 2: Run all tests to make sure that the new test starts red.
+//     Step 3: Have your sayHello function return a string. The simplest code and smallest change possible is to return an empty string return "".
+//     Step 4: Now, run all the tests to ensure that the previously red test is now turned green by our impelementation.
+//     Step 5: There's nothing to refactor.
+// Step 6: Repeat (Repeat the process by moving to build the next, small test)
+// Always: Add, commit, and push your work to GitHub.
