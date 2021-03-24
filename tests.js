@@ -48,3 +48,8 @@ describe("addOne", function() {
         expect(Number.isNaN(addOne([1,2,3]))).toBe(true);
     });
 });
+
+describe('sayHello', function() {
+    it('should be a defined function', function() {
+        expect(typeof sayHello).toBe('function')});
+    });
