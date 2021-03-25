@@ -10,6 +10,6 @@ function addOne(input) {
         return input + 1;
     }
 }
-function sayHello(){
-    return "Say Hello!";
+function sayHello(input){
+    return ("Hello, " + input + "!");
 }
