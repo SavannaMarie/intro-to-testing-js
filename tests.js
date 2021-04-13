@@ -1,4 +1,5 @@
 // Unit tests for the helloWorld function
+
 describe('helloWorld', function() {
     it('should be a defined function', function() {
       expect(typeof helloWorld).toBe('function');
@@ -56,9 +57,6 @@ describe('sayHello', function() {
     it('should return a string when called', function() {
         expect(typeof sayHello()).toBe("string");
     });
-    it("should never return 'undefined' when called", function() {
-        expect(sayHello()).not.toBe(undefined);
-    });
     it("should return 'Hello, Jane!' when called", function() {
         expect(sayHello("Jane")).toBe("Hello, Jane!");
     });
@@ -68,5 +66,21 @@ describe('sayHello', function() {
     it("should return 'Hello, Pat' when called", function() {
         expect(sayHello("Pat")).toBe("Hello, Pat!");
     });
+    it("should return 'Hello, world!' when called", function() {
+        expect(sayHello()).toBe("Hello, World!");
+    });
 });
+describe("isFive", function() {
+    it("should be a defined function", function() {
+        expect(typeof isFive).toBe("function");
+    });
+    it("should return a boolean no matter what the input", function() {
+        expect(typeof isFive()).toBe("boolean");
+    });
+    it("should return true when passed 5", function() {
+        expect(isFive(5)).toBe(true);
+    });
+});
+
+
 

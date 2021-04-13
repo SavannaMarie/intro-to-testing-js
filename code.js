@@ -1,4 +1,4 @@
-// helloWorld function 
+// helloWorld function
 function helloWorld() {
     return "Hello, World!";
 }
@@ -10,6 +10,20 @@ function addOne(input) {
         return input + 1;
     }
 }
-function sayHello(input){
-    return ("Hello, " + input + "!");
+// sayHello
+function sayHello(input) {
+    if (typeof input === "string" && input.length > 0 && parseFloat(input) != input){
+        return "Hello, " + input + "!";
+    } else {
+        return "Hello, World!";
+    }
+}
+
+//  isFive
+function isFive(input){
+    if (input == 5) {
+        return true;
+    } else {
+        return false;
+    }
 }
