@@ -21,9 +21,14 @@ function sayHello(input) {
 
 //  isFive
 function isFive(input){
-    if (input == 5) {
-        return true;
-    } else {
+    return input === 5;
+}
+
+function isEven(input) {
+    var evenNum = parseInt(input);
+    if (typeof input != "number") {
         return false;
+    } else {
+        return evenNum % 2 === 0;
     }
 }
