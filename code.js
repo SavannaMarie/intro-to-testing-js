@@ -31,3 +31,7 @@ function isEven(input) {
         return parseInt(input) % 2 === 0;
     }
 }
+// isVowel
+function isVowel(input){
+    return input ;
+}

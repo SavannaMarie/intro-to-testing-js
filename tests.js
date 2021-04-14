@@ -107,6 +107,20 @@ describe("isEven", function() {
         expect(isEven("")).toBe(false);
     });
 });
+describe('isVowel', function() {
+    it('should be a defined function', function() {
+        expect(typeof isVowel).toBe('function');
+    });
+    it("should return a boolean no matter what the input", function() {
+        expect(typeof isVowel()).toBe("boolean");
+    });
+    it('isVowel("a") returns true', function() {
+        expect(isVowel("a")).toBe("true");
+    });
+    it("isVowel(\"A\") returns true", function() {
+        expect(isVowel("A")).toBe("true");
+    });
+});
 
 
 
