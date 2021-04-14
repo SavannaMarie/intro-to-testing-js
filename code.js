@@ -12,7 +12,7 @@ function addOne(input) {
 }
 // sayHello
 function sayHello(input) {
-    if (typeof input === "string" && input.length > 0 && parseFloat(input) != input){
+    if (typeof input === "string" && input.length > 0 && parseFloat(input) !== input){
         return "Hello, " + input + "!";
     } else {
         return "Hello, World!";
@@ -23,12 +23,11 @@ function sayHello(input) {
 function isFive(input){
     return input === 5;
 }
-
+// isEven
 function isEven(input) {
-    var evenNum = parseInt(input);
-    if (typeof input != "number") {
-        return false;
+    if (typeof input != "string") {
+        return parseInt(input) % 2 === 0;
     } else {
-        return evenNum % 2 === 0;
+        return parseInt(input) % 2 === 0;
     }
 }
