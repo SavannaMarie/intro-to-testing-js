@@ -32,6 +32,17 @@ function isEven(input) {
     }
 }
 // isVowel
-function isVowel(input){
-    return input ;
+function isVowel(vowel){
+    if (typeof vowel === "number"){
+        return false;
+    }else if (vowel === "a" || vowel === "A") {
+        return true;
+    } else {
+        return false;
+    }
 }
+// add
+function add(x,y) {
+    return parseFloat(x) + parseFloat(y);
+}
+
